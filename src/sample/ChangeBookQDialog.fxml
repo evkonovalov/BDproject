@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="183.0" prefWidth="324.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ChangeBookQDialogController">
+    <children>
+        <VBox alignment="CENTER" layoutY="232.0" prefHeight="149.0" prefWidth="324.0" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0">
+                    <children>
+                        <Label alignment="CENTER_RIGHT" minWidth="100.0" text="Book Name" />
+                        <TextField fx:id="tfName" HBox.hgrow="ALWAYS" />
+                    </children>
+                    <padding>
+                        <Insets right="30.0" />
+                    </padding>
+                </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" minWidth="100.0" text="Library name" />
+                  <TextField fx:id="tfLName" HBox.hgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets right="30.0" />
+               </padding>
+            </HBox>
+                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0">
+                    <children>
+                        <Label alignment="CENTER_RIGHT" minWidth="100.0" text="Qnt diff" />
+                        <TextField fx:id="tfqd" HBox.hgrow="ALWAYS" />
+                    </children>
+                    <padding>
+                        <Insets right="30.0" />
+                    </padding>
+                </HBox>
+            </children>
+        </VBox>
+      <Button layoutX="195.0" layoutY="137.0" mnemonicParsing="false" onAction="#btnCancelClicked" text="Cancel" textFill="RED" />
+            <Button layoutX="39.0" layoutY="137.0" mnemonicParsing="false" onAction="#btnAddPersonClicked" prefHeight="26.0" prefWidth="76.0" text="Change" />
+    </children>
+</AnchorPane>
